@@ -1,4 +1,7 @@
 package Week1;
+import java.awt.Rectangle;
+
+
 
 public class Playground {
     public static void main(String[] args) {
@@ -41,11 +44,14 @@ public class Playground {
         System.out.println(newFriend.validateFriend(name));
         name = "123";
         System.out.println(newFriend.validateFriend(name));
-        // Lets try to create a shape and use an object outside one that is given 
-        Shapes rec = new Shapes();
-        rec.rectangle(5, 6);
+        // Lets try to create a shape 
+        Rectangle rec = new Rectangle(0,0,5,6);
+        rec.translate(5, 5);
+        System.out.println(rec);
+        System.out.println(rec.getLocation());
 
     }
+
 
     // So now lets make a method
     // Lets say we want to add an ! to the end of our name
