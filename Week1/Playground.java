@@ -2,6 +2,7 @@ package Week1;
 import java.awt.Rectangle;
 
 
+import javax.swing.JFrame;
 
 public class Playground {
     public static void main(String[] args) {
@@ -49,6 +50,14 @@ public class Playground {
         rec.translate(5, 5);
         System.out.println(rec);
         System.out.println(rec.getLocation());
+
+
+
+        JFrame frame = new JFrame();
+        frame.setSize(300, 400);
+        frame.setTitle("Two rectangles"); frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        RectangleComponent component = new RectangleComponent(); frame.add(component);
+        frame.setVisible(true); 
 
     }
 
