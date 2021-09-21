@@ -59,6 +59,12 @@ public class Playground {
         RectangleComponent component = new RectangleComponent(); frame.add(component);
         frame.setVisible(true); 
 
+        Counter count = new Counter();
+        System.out.println(count.getValue());
+        count.click();
+        count.click();
+        System.out.println(count.getValue());
+
     }
 
 
