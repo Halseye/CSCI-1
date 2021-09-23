@@ -1,7 +1,6 @@
 package Week1;
 import java.awt.Rectangle;
-
-
+// Cats>Learning
 import javax.swing.JFrame;
 
 public class Playground {
@@ -14,7 +13,7 @@ public class Playground {
 
         // METHOD 1 now if i want to call this method. I need to do it within the main method. 
         addExclamationPoint(name);
-
+        
         // METHOD 2
         // When we run this nothing returns... Because we need to save this to a variable
         newAddExclamationPoint(name);
@@ -37,6 +36,7 @@ public class Playground {
         // so lets write another method with some if else statements
         // we can make it a variable:
         String validateFriend = newFriend.validateFriend(name);
+        //System.out.println(validateFriend);
         // or just syso it
         System.out.println(newFriend.validateFriend(name));
         // we can change our name at a later point if we wanted because the variable is not constant
@@ -51,8 +51,6 @@ public class Playground {
         System.out.println(rec);
         System.out.println(rec.getLocation());
 
-
-
         JFrame frame = new JFrame();
         frame.setSize(300, 400);
         frame.setTitle("Two rectangles"); frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,13 +58,17 @@ public class Playground {
         frame.setVisible(true); 
 
         Counter count = new Counter();
+        //System.out.println(count.value);
         System.out.println(count.getValue());
         count.click();
         count.click();
+        count.click();
+        count.click();
+        count.minusClick();
+        // count.reset();
         System.out.println(count.getValue());
 
     }
-
 
     // So now lets make a method
     // Lets say we want to add an ! to the end of our name
