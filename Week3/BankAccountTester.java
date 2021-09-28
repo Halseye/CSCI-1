@@ -12,5 +12,7 @@ public class BankAccountTester {
         System.out.println(bobChecking.getBalance());
         System.out.println(gregChecking.getBalance());
 
+        gregChecking.deposit(50000);
+        gregChecking.calcInterest(gregChecking.getBalance(), 10, 0.07, 12);
     }
 }
