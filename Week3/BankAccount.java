@@ -1,9 +1,10 @@
 package Week3;
-
+import java.util.Scanner;
 
 public class BankAccount {
     // Make it private because we dont want people to be able to see account balances 
     private double balance;
+
 
     public BankAccount() {
         balance = 0;
@@ -51,4 +52,23 @@ public class BankAccount {
         System.out.println("Compound Interest after " + t + " years: "+ compinterest);
         System.out.println("Amount after " + t + " years: "+ amount);
     }
+
+    public static int menu() {
+
+        int selection;
+        Scanner input = new Scanner(System.in);
+
+        /***************************************************/
+
+        System.out.println("Please Select an option:");
+        System.out.println("-------------------------\n");
+        System.out.println("1: Get Balance");
+        System.out.println("2: Deposit");
+        System.out.println("3: Withdraw");
+        System.out.println("0: Quit");
+
+        selection = input.nextInt();
+        return selection;    
+    }
+
 }
