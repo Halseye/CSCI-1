@@ -7,7 +7,7 @@ public class For {
     public static void main(String[] args) {
         // for loop executes block of code a limited amount of times 
         // simple case
-        // variable, condition, iteration (optional)
+        // init variable, condition, iteration (optional)
         for(int i = 0; i<=10; i++){
             System.out.println(i);
         }
@@ -39,6 +39,18 @@ public class For {
             for(int j=1; j<= columns; j++){
                 // incharge of columns until it reaches the end then moves back to the outer loop
                 System.out.print(symbol);
+            }
+        }
+        System.out.println();
+        String str = "Hello World @#$$@ Hello World! Hello World";
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch=='!') {
+                System.out.println(i +"   "+ ch + "<- FOUND AT POSITION: "+ i);
+                //break;
+            }
+            else{
+                System.out.println(i +"   "+ ch);
             }
         }
 
