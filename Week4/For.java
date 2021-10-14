@@ -54,6 +54,33 @@ public class For {
             }
         }
 
+
+        // Calc Average
+        // double total = 0;
+        // int count = 0;
+        // Scanner in = new Scanner(System.in);
+        // while (in.hasNextDouble()) {
+        //     double input = in.nextDouble(); 
+        //     total = total + input;
+        //     count++;
+        // }
+        // double average = 0; 
+        // if (count > 0){
+        //     average = total / count; 
+        // }
+        // System.out.println(average);
+        
+        // Duplicate Values
+        // Scanner in = new Scanner(System.in);
+        // double input = in.nextDouble(); 
+        // while (in.hasNextDouble()){
+        //     double previous = input; 
+        //     input = in.nextDouble(); 
+        //     if (input == previous){
+        //         System.out.println("Duplicate input");
+        //     }
+        // }
+
     }
     
 }
