@@ -7,7 +7,7 @@ public class For {
     public static void main(String[] args) {
         // for loop executes block of code a limited amount of times 
         // simple case
-        // variable, condition, iteration (optional)
+        // init variable, condition, iteration (optional)
         for(int i = 0; i<=10; i++){
             System.out.println(i);
         }
@@ -41,6 +41,45 @@ public class For {
                 System.out.print(symbol);
             }
         }
+        System.out.println();
+        String str = "Hello World @#$$@ Hello World! Hello World";
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch=='!') {
+                System.out.println(i +"   "+ ch + "<- FOUND AT POSITION: "+ i);
+                //break;
+            }
+            else{
+                System.out.println(i +"   "+ ch);
+            }
+        }
+
+
+        // Calc Average
+        // double total = 0;
+        // int count = 0;
+        // Scanner in = new Scanner(System.in);
+        // while (in.hasNextDouble()) {
+        //     double input = in.nextDouble(); 
+        //     total = total + input;
+        //     count++;
+        // }
+        // double average = 0; 
+        // if (count > 0){
+        //     average = total / count; 
+        // }
+        // System.out.println(average);
+        
+        // Duplicate Values
+        // Scanner in = new Scanner(System.in);
+        // double input = in.nextDouble(); 
+        // while (in.hasNextDouble()){
+        //     double previous = input; 
+        //     input = in.nextDouble(); 
+        //     if (input == previous){
+        //         System.out.println("Duplicate input");
+        //     }
+        // }
 
     }
     
