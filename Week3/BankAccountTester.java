@@ -17,11 +17,16 @@ public class BankAccountTester {
         // gregChecking.deposit(50000);
         // gregChecking.calcInterest(gregChecking.getBalance(), 10, 0.07, 12);
 
+
+
+
         System.out.println("Hello.. Welcome.. How much money would you like to start an account with?");
         double startingBalance = keyboard.nextDouble();
         System.out.println("Wow $"+ startingBalance + " Thats a great start.. Let me get the account started for you");
         BankAccount userBank = new BankAccount(startingBalance);
         System.out.println("Great the account is started");
+
+        userBank.investment(startingBalance, 5, 10000);
 
         int menuSelection = BankAccount.menu();
         
