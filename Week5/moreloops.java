@@ -41,12 +41,43 @@ public class moreloops {
         return result;
     }
 
+    //Create a Palindrome checker 
+    //EX.
+    //tacocat -> True
+    //test -> False
+    static boolean isPalindrome(String str){
+ 
+      // Pointers pointing to the beginning
+      // and the end of the string
+      int i = 0, j = str.length() - 1;
+
+      // While there are characters to compare
+      while (i < j) {
+
+          // If there is a mismatch
+          if (str.charAt(i) != str.charAt(j))
+              return false;
+
+          // Increment first pointer and
+          // decrement the other
+          i++;
+          j--;
+      }
+
+      // Given string is a palindrome
+      return true;
+    }
+
       public static void main(String[] args) {
           System.out.println(everyNth("tester", 2));
           System.out.println(doubleChar("tester"));
           System.out.println(countXX("asdjfasioXXaksjdklasxxklasjdiosaxx"));
           System.out.println(oneTwo("tacocat"));
+          System.out.println(isPalindrome("tacocat"));
       }
+
+
+ 
       
     
 }
