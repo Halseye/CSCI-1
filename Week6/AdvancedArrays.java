@@ -46,7 +46,15 @@ public class AdvancedArrays {
  
         // conversion from String object to StringBuffer
         StringBuffer sbr = new StringBuffer(str);
+        int p = sbr.length();
+        int q = sbr.capacity();
+        System.out.println("Length if String=" + p);
+        System.out.println("Capacity of String=" + q);
         // To reverse the string
+        // sbr.replace(5, 8, "are");
+        // sbr.insert()
+        // sbr.setCharAt(0,'s');
+        // System.out.println(sbr); 
         sbr.reverse();
         System.out.println(sbr);
 
