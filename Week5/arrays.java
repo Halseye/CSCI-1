@@ -56,7 +56,7 @@ public class arrays {
         }
 
         String[] names = {"Appa","Momo","Jack"};
-        System.out.println(names[0]);
+        System.out.println(names[2]);
 
         for(int i =0; i < names.length; i++){
             System.out.println(names[i]);

@@ -1,6 +1,7 @@
 package Week6;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class AdvancedArrays {
     // Given an Array return true if 9 appears as first or last element 
@@ -70,6 +71,16 @@ public class AdvancedArrays {
         return String.copyValueOf(temp);
     }
 
+    public static int[] list() {
+        Random rand = new Random();
+        int[] anArray = new int[10];
+        for(int i=0;i<anArray.length;i++)
+        {
+            anArray[i] = rand.nextInt(2);
+        }
+        return anArray;
+    }
+
     public static void main(String[] args) {
         int[] nums = { 
             1, 2, 3,
@@ -86,6 +97,11 @@ public class AdvancedArrays {
         System.out.println(revStringnew("great"));
         System.out.println(reverseArray("escape"));
 
-    
+        // for (int i : list()) {
+        //     System.out.println(i); 
+        // }
+        int [] z = list();
+        System.out.println(Arrays.toString(z));
+        
     }
 }
